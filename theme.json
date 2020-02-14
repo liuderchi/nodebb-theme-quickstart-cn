@@ -1,6 +1,6 @@
 {
-    "id": "nodebb-theme-quickstart",
-    "name": "My Theme Name",
+    "id": "nodebb-theme-quickstart-cn",
+    "name": "Persona (fork)",
     "description": "Enter a description here",
     "url": "https://github.com/nodebb/nodebb-theme-quickstart"
 }
