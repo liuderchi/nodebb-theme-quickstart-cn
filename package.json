@@ -5,8 +5,7 @@
   "main": "theme.less",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -15,17 +14,14 @@
       "git add"
     ]
   },
-  "keywords": [
-
-  ],
+  "keywords": [],
   "author": "a632079 <a632079@qq.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nodebb-china/nodebb-theme-quickstart/issues"
   },
   "homepage": "https://github.com/nodebb-china/nodebb-theme-quickstart",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-angular": "^7.1.2",
