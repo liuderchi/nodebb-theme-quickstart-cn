@@ -1,1 +1,73 @@
 @import "../nodebb-theme-persona/theme";
+
+@bodyBg: rgb(0, 50, 78);
+
+@navBg: rgb(0, 106, 166);
+@navBgActive: rgb(0, 52, 83);
+@navIconColor: #fff;
+
+@blackText: #333;
+
+body {
+  color: #fff;
+  background-color: @bodyBg;
+}
+
+nav#header-menu {
+  background-color: @navBg;
+  border: none;
+  h1 {
+    color: @navIconColor;
+  }
+}
+
+footer {
+  display: none;
+}
+
+// overriding from devtool
+
+.navbar-default .navbar-nav {
+  li {
+    a,
+    a:hover,
+    a:focus {
+      color: @navIconColor;
+      background-color: @navBg;
+    }
+  }
+  .active,
+  .open {
+    a,
+    a:hover,
+    a:focus,
+    label,
+    label:hover,
+    label:focus {
+      color: @navIconColor;
+      background-color: @navBgActive;
+    }
+  }
+  // special case: dropdown anchors
+  ul.dropdown-menu,
+  ul#user-control-list {
+    li > a {
+      color: @blackText;
+      background-color: #fff;
+    }
+  }
+}
+
+// mobile menu
+@media (max-width: 1199px) {
+  nav#menu {
+    background-color: @bodyBg;
+    background-image: unset;
+    .menu-profile {
+      background-color: @navBg;
+    }
+    .menu-section {
+      background-color: @bodyBg;
+    }
+  }
+}
